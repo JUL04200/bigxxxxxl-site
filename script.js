@@ -24,13 +24,18 @@ function closeMenu() {
   mobileMenu.classList.remove('open');
 }
 
-// Contact form mock submit
+// Contact form — ouvre la messagerie avec le mail pré-rempli
 function handleSubmit(e) {
   e.preventDefault();
-  const success = document.getElementById('formSuccess');
-  success.style.display = 'block';
-  e.target.reset();
-  setTimeout(() => { success.style.display = 'none'; }, 6000);
+  const name    = document.getElementById('name').value;
+  const email   = document.getElementById('email').value;
+  const subject = document.getElementById('subject').value || 'Contact depuis le site Big 5XL';
+  const message = document.getElementById('message').value;
+
+  const body = `Nom : ${name}\nEmail : ${email}\n\n${message}`;
+  const mailto = `mailto:newmanbig@orange.fr?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  window.location.href = mailto;
 }
 
 // Animate on scroll (Intersection Observer)
