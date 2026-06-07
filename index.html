@@ -3,17 +3,368 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>404 — Page non trouvée</title>
-  <style>
-    body { display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; font-family: sans-serif; background: #111; color: #eee; text-align: center; }
-    h1 { font-size: 6rem; margin: 0; }
-    p { font-size: 1.2rem; }
-  </style>
+  <title>BIG 5XL — Spécialiste Grandes Tailles Homme | Paris 6e</title>
+  <meta name="description" content="BIG 5XL, spécialiste grandes tailles homme à Paris. Mode masculine de XL à 5XL, boutique au 12 rue de l'Ancienne-Comédie, Paris 6e. Marque New Man." />
+  <meta name="keywords" content="grandes tailles homme, big size homme, New Man, Paris, mode masculine, XXXXXL, 5XL" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div>
-    <h1>404</h1>
-    <p>Page non trouvée</p>
-  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#accueil" class="nav-logo">
+        <span class="logo-big">BIG</span><span class="logo-5xl">NEWMAN</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#accueil">Accueil</a>
+        <a href="#boutique">La Boutique</a>
+        <a href="#marques">Marques</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="#accueil" onclick="closeMenu()">Accueil</a>
+      <a href="#boutique" onclick="closeMenu()">La Boutique</a>
+      <a href="#marques" onclick="closeMenu()">Marques</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="accueil">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Spécialiste Grandes Tailles</div>
+      <h1>Vêtements<br /><span class="highlight">grandes tailles hommes</span></h1>
+      <p class="hero-sub">De XL à <strong>14XL</strong> — couleur, joie de vivre, originalité</p>
+      <div class="hero-ctas">
+        <a href="#boutique" class="btn btn-yellow">Découvrir la boutique</a>
+        <a href="#contact" class="btn btn-outline">Nous contacter</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">↓</div>
+  </section>
+
+  <!-- BIENVENUE -->
+  <section class="welcome" id="boutique">
+    <div class="container">
+      <div class="welcome-grid">
+        <div class="welcome-text">
+          <span class="section-tag">Bienvenue</span>
+          <h2>Bienvenue chez <span class="yellow-text">BigNewMan&nbsp;!</span></h2>
+          <p class="lead">Oubliez la grisaille et les coupes sans saveur. Ici, la mode masculine grande taille rime avec <strong>couleur, joie de vivre et originalité&nbsp;!</strong></p>
+          <p>Nous avons sélectionné pour vous des pièces funs et taillées pour votre confort, pour que chaque tenue soit un véritable plaisir à porter.</p>
+          <p>Poussez la porte de notre boutique au <strong>12 rue de l'Ancienne-Comédie</strong>, et laissez-vous guider. <strong>Franciane</strong> vous y accueille avec son sourire radieux et une écoute toujours bienveillante pour vous aider à trouver le style qui vous correspond parfaitement.</p>
+          <div class="welcome-badge-en">
+            <span>🇬🇧</span>
+            <div>
+              <strong>English spoken!</strong><br />
+              We are always happy to welcome and assist our international customers.
+            </div>
+          </div>
+        </div>
+        <div class="welcome-photos">
+          <div class="photo-grid">
+            <img src="images/interieur1.jpg" alt="Intérieur boutique BigNewMan" class="photo-main" loading="lazy" />
+            <img src="images/interieur2.jpg" alt="Rayons chemises" class="photo-sm" loading="lazy" />
+            <img src="images/interieur3.jpg" alt="Pantalons et vestes" class="photo-sm" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHIFFRES -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">XL → 14XL</div>
+        <div class="stat-label">Toutes les tailles</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">Paris 6<sup>e</sup></div>
+        <div class="stat-label">Cœur de Paris</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">+20 ans</div>
+        <div class="stat-label">D'expertise</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">🇫🇷 🇬🇧</div>
+        <div class="stat-label">Accueil bilingue</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="gallery">
+    <div class="container">
+      <span class="section-tag">Nos espaces</span>
+      <h2>La boutique en images</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item large">
+          <img src="images/facade.jpg" alt="Façade boutique BigNewMan Paris" loading="lazy" />
+          <div class="gallery-caption">Notre boutique — 12 rue de l'Ancienne-Comédie</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/interieur2.jpg" alt="Espace chemises et polos" loading="lazy" />
+          <div class="gallery-caption">Chemises &amp; polos</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/interieur3.jpg" alt="Vestes et pantalons" loading="lazy" />
+          <div class="gallery-caption">Vestes &amp; pantalons</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/interieur4.jpg" alt="Vue générale de la boutique" loading="lazy" />
+          <div class="gallery-caption">Un large choix de styles</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUES -->
+  <section class="brands" id="marques">
+    <div class="container">
+      <span class="section-tag">Nos marques</span>
+      <h2>Des marques sélectionnées avec soin</h2>
+      <p class="brands-intro">Nous proposons une sélection de marques reconnues pour leur qualité et leur style, adaptées aux morphologies grandes tailles.</p>
+      <div class="brands-grid">
+        <div class="brand-card">
+          <div class="brand-logo-box newman-brand">
+            <span class="brand-nm-new">NEW</span><span class="brand-nm-man">MAN</span>
+          </div>
+          <p>Pionnière de la mode masculine décontractée, <strong>New Man</strong> propose des pièces colorées et confortables.</p>
+        </div>
+        <div class="brand-card">
+          <div class="brand-logo-box">
+            <span class="brand-name-text">DIGEL</span>
+          </div>
+          <p><strong>Digel</strong> — le concept menswear allemand alliant coupe soignée et modernité.</p>
+        </div>
+        <div class="brand-card">
+          <div class="brand-logo-box">
+            <span class="brand-name-text camel">CAMEL<br/>ACTIVE</span>
+          </div>
+          <p><strong>Camel Active</strong> — pour un style urbain et aventurier, des matières robustes et des coupes libres.</p>
+        </div>
+        <div class="brand-card">
+          <div class="brand-logo-box">
+            <span class="brand-name-text" style="font-size:1rem; letter-spacing:0.1em;">ET BIEN<br/>D'AUTRES…</span>
+          </div>
+          <p>Venez découvrir l'ensemble de nos marques en boutique, sélectionnées pour vous habiller avec élégance et confort.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFOS PRATIQUES -->
+  <section class="info-band">
+    <div class="container info-band-grid">
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div>
+          <strong>Adresse</strong><br />
+          12 rue de l'Ancienne-Comédie<br />75006 Paris
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">🚇</div>
+        <div>
+          <strong>Métro</strong><br />
+          Odéon<br />(lignes 4 &amp; 10)
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <div>
+          <strong>Téléphone</strong><br />
+          <a href="tel:+33143557754">01 43 55 77 54</a>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">✉️</div>
+        <div>
+          <strong>Email</strong><br />
+          <a href="mailto:newmanbig@orange.fr">newmanbig@orange.fr</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / MAP -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-form-wrap">
+        <span class="section-tag">Contact</span>
+        <h2>Écrivez-nous</h2>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Sujet</label>
+            <input type="text" id="subject" name="subject" placeholder="Disponibilité d'une taille, renseignement…" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-yellow btn-full">Envoyer le message</button>
+          <div class="form-success" id="formSuccess">✅ Message envoyé ! Nous vous répondrons très vite.</div>
+        </form>
+      </div>
+      <div class="contact-map-wrap">
+        <span class="section-tag">Nous trouver</span>
+        <h2>Plan d'accès</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9992353386787!2d2.340065615674629!3d48.85204257928783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d9e2c2b3a7%3A0x0!2s12+Rue+de+l%27Ancienne+Com%C3%A9die%2C+75006+Paris!5e0!3m2!1sfr!2sfr!4v1620000000000!5m2!1sfr!2sfr"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Carte BigNewMan Paris"
+          ></iframe>
+        </div>
+        <div class="transport-info">
+          <div class="transport-item">🚇 <strong>Odéon</strong> — lignes 4 &amp; 10 (2 min à pied)</div>
+          <div class="transport-item">🚌 <strong>Bus</strong> — 58, 63, 70, 86, 87, 96</div>
+          <div class="transport-item">🚲 <strong>Vélib'</strong> — station à 100 m</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVIS GOOGLE -->
+  <section class="reviews">
+    <div class="container">
+      <span class="section-tag">Avis Google</span>
+      <h2>Ce que disent nos clients</h2>
+<div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">G</div>
+            <div><div class="review-name">Gaëtan Obeissart</div><div class="review-date">il y a un an</div></div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p>"Accueil très chaleureux ! Une commerçante qui connait très bien son métier, à l'écoute du client, ayant un coup d'œil excellent et dispensant de précieux conseils pour faire le meilleur choix. Allez-y sans hésitation !"</p>
+          <div class="review-google">via Google</div>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">C</div>
+            <div><div class="review-name">Charley Aldridge</div><div class="review-date">il y a 4 ans</div></div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p>"I came to Paris without enough warm clothes for my trip… The staff was so helpful and quickly helped me get warm and look good. Thank you so much!!!"</p>
+          <div class="review-google">via Google</div>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">D</div>
+            <div><div class="review-name">Diad'Production</div><div class="review-date">il y a 6 mois</div></div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p>"Super accueil, gérante très aimable et ayant un réel coup d'œil pour trouver ce dont vous avez besoin 😉"</p>
+          <div class="review-google">via Google</div>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">P</div>
+            <div><div class="review-name">Pandora Golden</div><div class="review-date">il y a 6 mois</div></div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p>"In Paris shopping for slacks for my husband and found this shop which had exactly what we were looking for. Definitely going back next visit. The owner, a lovely helpful lady."</p>
+          <div class="review-google">via Google</div>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">A</div>
+            <div><div class="review-name">Alan Klockman</div><div class="review-date">il y a 8 mois</div></div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p>"What a great find. Unique selection with something for everyone. Very curated and a lot of options in a small independently owned boutique style shop. Great help!"</p>
+          <div class="review-google">via Google</div>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">H</div>
+            <div><div class="review-name">Humphrey Binfuffé</div><div class="review-date">il y a un an</div></div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p>"Service client irréprochable, habits adaptés, excellents conseils, chaudement recommandé."</p>
+          <div class="review-google">via Google</div>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">L</div>
+            <div><div class="review-name">Laurent Ollivon</div><div class="review-date">il y a 3 ans</div></div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p>"Vraiment bien, une très bonne adresse pour les hommes en XXL, toujours le sourire et de bons conseils."</p>
+          <div class="review-google">via Google</div>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">M</div>
+            <div><div class="review-name">Matthew O'Brien</div><div class="review-date">il y a 3 ans</div></div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p>"The proprietress of this shop is an expert at customer service. I had one of the best shopping experiences of my life in this store!"</p>
+          <div class="review-google">via Google</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-big">BIG</span><span class="logo-5xl">NEWMAN</span>
+        <p>Spécialiste Grandes Tailles Homme<br />Paris 6<sup>e</sup> depuis plus de 20 ans</p>
+      </div>
+      <div class="footer-links">
+        <strong>Navigation</strong>
+        <a href="#accueil">Accueil</a>
+        <a href="#boutique">La Boutique</a>
+        <a href="#marques">Marques</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <strong>Coordonnées</strong>
+        <span>12 rue de l'Ancienne-Comédie</span>
+        <span>75006 Paris</span>
+        <a href="tel:+33143557754">01 43 55 77 54</a>
+        <a href="mailto:newmanbig@orange.fr">newmanbig@orange.fr</a>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/Bigxxxxxl-grandes-tailles-hommes-diffusion-" target="_blank" rel="noopener" class="social-btn">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 BIG 5XL — New Man Grandes Tailles Homme — Paris 6<sup>e</sup></p>
+    </div>
+  </footer>
+
+  <a href="#accueil" class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</a>
+
+  <script src="script.js"></script>
 </body>
 </html>
